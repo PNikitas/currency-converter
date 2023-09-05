@@ -5,7 +5,7 @@ import Select from './components/Select';
 
 const API_KEY = process.env.REACT_APP_FREECURRENCY_KEY;
 const AMOUNT_REGEX = /^\d*(\.\d{0,2})?$/g;
-const HISTORY_LENGTH = 7;
+const HISTORY_LENGTH = 20;
 const CURRENCIES = ['USD', 'EUR', 'JPY', 'BGN', 'DKK', 'CZK', 'HRK', 'PLN', 'GBP', 'TRY'];
 
 const getConversion = async (fromCurrency, toCurrency) => {
